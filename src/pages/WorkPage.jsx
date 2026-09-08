@@ -9,7 +9,14 @@ function WorkPage() {
       </div>
 
       <div>
-        {projects.map()}
+        {projects.map((project) => (
+          <ProjectCard
+            key={project.title}
+            title={project.title}
+            category={project.category}
+            description={project.description}
+          />
+        ))}
       </div>
     </section>
   );
