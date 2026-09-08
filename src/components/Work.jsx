@@ -1,3 +1,4 @@
+import projects from "../data/workData";
 function Work() {
     return (
         <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 md:py-16 lg:py-20">
@@ -14,9 +15,15 @@ function Work() {
 
             </div>
 
-            {/* Project Grid */}
             <div className="mt-10 grid grid-cols-1 gap-4 sm:gap-6 md:grid-cols-2 lg:mt-12 lg:grid-cols-3">
-                {/* ProjectCards will render here */}
+                {projects.map((project) => (
+                    <ProjectCard
+                        key={project.title}
+                        title={project.title}
+                        category={project.category}
+                        description={project.description}
+                    />
+                ))}
             </div>
 
         </section>
