@@ -1,6 +1,6 @@
 function Footer() {
     return (
-        <footer className="fixed w-full">
+        <footer className="flex w-full">
 
             <div>
                 <h2>Nexora</h2>
