@@ -6,7 +6,7 @@ function Navbar() {
     };
     return (
         <nav
-            className="bg-blue-100 fixed top-0 left-0 z-50 w-full">
+            className="bg-blue-300 fixed top-0 left-0 z-50 w-full">
             <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
                 <div className="font-bold text-xl">
                     Nexora
