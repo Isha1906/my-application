@@ -1,19 +1,74 @@
-function ContactForm() {
+import { useState } from "react";
+
+function ContactForm({ onClose }) {
+    const [formData, setFormData] = useState({
+        name: "",
+        email: "",
+        message: ""
+    });
+
+    const handleChange = (e) => {
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value
+        });
+    };
+
     return (
-        <div>
-            <h2>Let's Connect</h2>
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 px-4">
 
-            <form>
-                <input type="text" placeholder="Your Name" />
+            <div className="relative w-full max-w-md rounded-2xl bg-white p-6 shadow-xl">
 
-                <input type="email" placeholder="Your Email" />
-
-                <textarea placeholder="Your Message"></textarea>
-
-                <button type="submit">
-                    Send Message
+                {/* Close Button */}
+                <button
+                    onClick={onClose}
+                    className="absolute right-4 top-3 text-2xl text-gray-500 hover:text-black"
+                >
+                    ×
                 </button>
-            </form>
+
+                <h2 className="mb-6 text-2xl font-bold">
+                    Let's Connect
+                </h2>
+
+                <form className="flex flex-col gap-4">
+
+                    <input
+                        type="text"
+                        name="name"
+                        value={formData.name}
+                        onChange={handleChange}
+                        placeholder="Your Name"
+                        className="rounded-lg border border-gray-300 p-3 outline-none focus:border-blue-500"
+                    />
+
+                    <input
+                        type="email"
+                        name="email"
+                        value={formData.email}
+                        onChange={handleChange}
+                        placeholder="Your Email"
+                        className="rounded-lg border border-gray-300 p-3 outline-none focus:border-blue-500"
+                    />
+
+                    <textarea
+                        name="message"
+                        value={formData.message}
+                        onChange={handleChange}
+                        placeholder="Your Message"
+                        rows="4"
+                        className="resize-none rounded-lg border border-gray-300 p-3 outline-none focus:border-blue-500"
+                    />
+
+                    <button
+                        type="submit"
+                        className="rounded-lg bg-blue-600 px-5 py-3 text-white transition hover:bg-blue-700"
+                    >
+                        Send Message
+                    </button>
+
+                </form>
+            </div>
         </div>
     );
 }
