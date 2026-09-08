@@ -1,6 +1,6 @@
 function Footer() {
     return (
-        <footer className="flex w-full">
+        <footer className="flex w-full bg-gray-400">
 
             <div>
                 <h2>Nexora</h2>
