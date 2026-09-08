@@ -1,4 +1,5 @@
 import projects from "../data/workData";
+import ProjectCard from "../components/ProjectCard";
 function WorkPage() {
   return (
     <section>
