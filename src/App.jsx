@@ -9,6 +9,7 @@ import AboutPage from "./pages/AboutPage";
 import Services from "./components/Services";
 import ServicesPage from "./pages/ServicesPage";
 import WorkPage from "./pages/WorkPage";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/services" element={<ServicesPage />} />
         <Route path="/work" element={<WorkPage />} />      
       </Routes>
+      <Footer />
     </main>
   );
 }
