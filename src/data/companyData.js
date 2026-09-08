@@ -1,4 +1,5 @@
 const companies=[
+    "Finora",
     "Vertex",
     "Lumina",
     "Nova",

@@ -13,6 +13,21 @@ const projects = [
     title: "Vertex",
     category: "Technology",
     description: "A scalable digital platform built for growing businesses."
+  },
+  {
+    title: "Nova",
+    category: "Digital Innovation",
+    description: "A modern platform focused on creating smarter digital solutions."
+  },
+  {
+    title: "Orbit",
+    category: "Business Platform",
+    description: "A connected platform designed to simplify business operations."
+  },
+  {
+    title: "Pulse",
+    category: "Data & Analytics",
+    description: "A data-driven solution that helps teams make better decisions."
   }
 ];
 
