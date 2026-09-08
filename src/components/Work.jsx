@@ -17,7 +17,7 @@ function Work() {
             </div>
 
             <div className="mt-10 grid grid-cols-1 gap-4 sm:gap-6 md:grid-cols-2 lg:mt-12 lg:grid-cols-3">
-                {projects.map((project) => (
+                {projects.slice(0,3).map((project) => (
                     <ProjectCard
                         key={project.title}
                         title={project.title}
