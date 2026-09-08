@@ -1,4 +1,5 @@
 import projects from "../data/workData";
+import ProjectCard from "./ProjectCard";
 function Work() {
     return (
         <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 md:py-16 lg:py-20">
