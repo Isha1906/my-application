@@ -26,7 +26,7 @@ function Navbar() {
                 </div>
                 <button className="rounded-full w-30 bg-blue-100 px-5 py-2 
                 text-black transition rounded-full px-5 py-2 hover:bg-gradient-to-r from-[#7CFF9B] via-[#28D9D1] to-[#D92BCB] transition-transform duration-500 ease-in-out" onClick={handleClick}>
-                    Let's Talk
+                    Let's Connect
                 </button>
             </div>
 
